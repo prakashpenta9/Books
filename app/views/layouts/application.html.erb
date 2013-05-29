@@ -10,27 +10,26 @@
   <%= csrf_meta_tags %>
 </head>
 <body id="store">
-	<div id="banner">
-		<%= image_tag("http://media-origin.pragprog.com/titles/rails4/code/rails30/depot_b/public/images/logo.png")%>
+	<div id="baner">
 		<%= @page_title || "CART" %>
-		
-	</div>
-	<div id="columns">
-		<div id="side">
-			<a href="http://www....">Home</a></br>
-			<a href="http://www..../faq">Question</a></br>
-			<a href="http://www..../news">News</a></br>
-			<a href="http://www..../contact">Contacts</a></br>
-		</div>
-	</div>
-	<div id="main">
-		<ul id="menu">
+		<ul id="menu" style="float: right;">
 			<li><%= link_to 'Home', store_index_path %></li>
 			<li><%= link_to 'Products', products_path %></li>
 			<li><%= link_to 'Create Products', new_product_path %></li>
 			<li><a href="#">Overview</a></li>
 			<li><a href="#">Contact Us</a></li>
 		</ul>
+	</div>
+	<div id="columns">
+		<div id="side">
+			<%= link_to 'Home', store_index_path %></br>
+			<%= link_to 'Products', products_path %></br>
+			<%= link_to 'Create Products', new_product_path %></br>
+			<a href="http://www..../contact">Contacts</a></br>
+		</div>
+	</div>
+	<div id="main">
+		
 		<%= yield %>
 	</div>
 </body>

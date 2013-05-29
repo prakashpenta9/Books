@@ -5,7 +5,7 @@
 {
     /*Styling the menu width and height*/
     list-style:none;
-    margin:30px auto 0px auto;
+    margin:0px auto 0px auto;
     width:600px;
     height:45px;
     padding:0px 20px 0px 20px;
@@ -15,17 +15,6 @@
     -moz-border-radius:10px;
     -webkit-border-radius:10px;
     /*Styling the background with fading effect*/
-     
-    background:#666666;
-    background: -moz-linear-gradient(top, #000, #999);
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#000), to( #999));
-     
-    /*Making the shadow effect into the menu bar */
-    box-shadow: inset 1px 1px 10px #FFFFFF;
-    -moz-box-shadow: inset 1px 1px 10px #FFFFFF;
-    -webkit-box-shadow: inset 1px 1px 10px #FFFFFF;
-    border:1px solid #000;
-     
      
 }
 #menu li /*Styling the li part of the menu*/
@@ -45,7 +34,7 @@
 #menu li a /*Styling the link part of the menu li*/
 {
     text-decoration:none;
-    color:#999999;
+    color:rgb(1, 17, 1);
     text-shadow:1px 1px 10px #FFCC99;
 }
 #menu li:hover a /*Styling the link part of the menu li in hover state*/
