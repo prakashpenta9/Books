@@ -150,3 +150,43 @@ height: 700px
 color: #bfb;
 font-size: small;
 }
+
+#menu
+{
+    list-style:none;
+    margin:0px auto 0px auto;
+    width:600px;
+    height:45px;
+    padding:0px 20px 0px 20px;
+     
+    /* Creating the curved corner of the border*/
+    border-radius:10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+     
+}
+#menu li /*Styling the li part of the menu*/
+{
+    float:left;
+    padding:4px 10px 4px 10px;
+    display: block;
+    position:relative;
+    text-align:center;
+    margin-right:30px;
+    margin-top:7px;
+    border:none;
+ 
+     
+}
+ 
+#menu li a /*Styling the link part of the menu li*/
+{
+    text-decoration:none;
+    color:rgb(1, 17, 1);
+    text-shadow:1px 1px 10px #FFCC99;
+}
+#menu li:hover a /*Styling the link part of the menu li in hover state*/
+{
+    color:#FFF;
+    text-shadow:1px 1px 10px #CCC;
+}
