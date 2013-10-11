@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Cart::Application.load_tasks
+Books::Application.load_tasks
