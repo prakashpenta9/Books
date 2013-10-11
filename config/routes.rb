@@ -1,4 +1,4 @@
-Books::Application.routes.draw do
+Cart::Application.routes.draw do
   get "store/index"
 
   resources :products
