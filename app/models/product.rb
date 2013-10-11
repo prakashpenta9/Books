@@ -1,5 +1,5 @@
 class Product < ActiveRecord::Base
-  attr_accessible :Description, :image_url, :price, :title
+  attr_accessible :Description, :image_url, :price, :title, :pic, :attach
   default_scope :order => 'title'
   validates :Description, :image_url, :price, :title, :presence => true
   validates :price, :numericality => {:greater_than_equal_to => 0.01}
