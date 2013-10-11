@@ -20,6 +20,14 @@
     <%= f.text_area :Description, :rows => 6 %>
   </div>
   <div class="field">
+    <b> attachment </b><br/>
+    <%= f.file_field :attach %>
+  </div>
+  <div class="field">
+    <b> Picture </b><br/>
+    <%= f.file_field :pic %>
+  </div>
+  <div class="field">
     <%= f.label :image_url %><br />
     <%= f.text_field :image_url %>
   </div>

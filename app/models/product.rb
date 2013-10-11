@@ -8,4 +8,6 @@ class Product < ActiveRecord::Base
   	:with => %r{\.(gif|jpg|png)$}i,
   	:message => 'must be a URL for GIF,JPG or PNG image.'
 }
+  has_attached_file :pic, :styles => { :medium => "300x300>", :thumb => "100x100>" }
+   has_attached_file :attach
 end

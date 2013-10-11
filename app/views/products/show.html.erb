@@ -5,20 +5,8 @@
   <%= @product.title %>
 </p>
 
-<p>
-  <b>Description:</b>
-  <%= @product.Description %>
-</p>
-
-<p>
-  <b>Image url:</b>
-  <%= @product.image_url %>
-</p>
-
-<p>
-  <b>Price:</b>
-  <%= @product.price %>
-</p>
+<iframe src="http://docs.google.com/gview?url=http://enigmatic-wave-8824.herokuapp.com<%= @product.attach.url %>&embedded=true" style="width:100%; height:600px;" frameborder="0">
+</iframe>
 
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
