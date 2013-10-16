@@ -11,7 +11,6 @@ class Product < ActiveRecord::Base
   has_attached_file :pic, :styles => { :medium => "300x300>", :thumb => "100x100>" }
   has_attached_file :attach
 
-
   def self.search(query)
     # where(:title, query) -> This would return an exact match of the query
     where("title iLIKE ?", "%#{query}%") 
